@@ -149,9 +149,6 @@
 							Home <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu level1">
-								<li><a href="index_light.html">Home 01</a></li>
-								<li><a href="homev2_light.html">Home 02</a></li>
-								<li><a href="homev3_light.html">Home 03</a></li>
 							</ul>
 						</li>
 						<li class="dropdown first">
@@ -160,15 +157,9 @@
 							</a>
 							<ul class="dropdown-menu level1">
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Movie grid<i class="ion-ios-arrow-forward"></i></a>
+								
 									<ul class="dropdown-menu level2">
-										<li><a href="moviegrid_light.html">Movie grid</a></li>
-										<li><a href="moviegridfw_light.html">movie grid full width</a></li>
 									</ul>
-								</li>			
-								<li><a href="movielist_light.html">Movie list</a></li>
-								<li><a href="moviesingle_light.html">Movie single</a></li>
-								<li class="it-last"><a href="seriessingle_light.html">Series single</a></li>
 							</ul>
 						</li>
 						<li class="dropdown first">
@@ -176,10 +167,7 @@
 							celebrities <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu level1">
-								<li><a href="celebritygrid01_light.html">celebrity grid 01</a></li>
-								<li><a href="celebritygrid02_light.html">celebrity grid 02 </a></li>
-								<li><a href="celebritylist_light.html">celebrity list</a></li>
-								<li class="it-last"><a href="celebritysingle_light.html">celebrity single</a></li>
+								
 							</ul>
 						</li>
 						<li class="dropdown first">
@@ -187,9 +175,7 @@
 							news <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu level1">
-								<li><a href="bloglist_light.html">blog List</a></li>
-								<li><a href="bloggrid_light.html">blog Grid</a></li>
-								<li class="it-last"><a href="blogdetail_light.html">blog Detail</a></li>
+								
 							</ul>
 						</li>
 						<li class="dropdown first">
@@ -197,10 +183,7 @@
 							community <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu level1">
-								<li><a href="userfavoritegrid_light.html">user favorite grid</a></li>
-								<li><a href="userfavoritelist_light.html">user favorite list</a></li>
-								<li><a href="userprofile_light.html">user profile</a></li>
-								<li class="it-last"><a href="userrate_light.html">user rate</a></li>
+								
 							</ul>
 						</li>
 					</ul>
@@ -210,9 +193,7 @@
 							pages <i class="fa fa-angle-down" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu level1">
-								<li><a href="landing.html">Landing</a></li>
-								<li><a href="404.html">404 Page</a></li>
-								<li class="it-last"><a href="comingsoon.html">Coming soon</a></li>
+								
 							</ul>
 						</li>                
 						<li><a href="#">Help</a></li>
@@ -241,7 +222,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="hero-ct">
-					<h1> movie listing - list</h1>
+					<h1> movie listing</h1>
 					<ul class="breadcumb">
 						<li class="active"><a href="#">Home</a></li>
 						<li> <span class="ion-ios-arrow-right"></span> movie listing</li>
@@ -256,15 +237,10 @@
 		<div class="row ipad-width2">
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="topbar-filter">
-					<p>Found <span>1,608 movies</span> in total</p>
-					<label>Sort by:</label>
+					<p >Found <span>1,608 movies</span> in total</p>
+					<label style="display: none;">Sort by:</label>
 					<select>
-						<option value="popularity">Popularity Descending</option>
-						<option value="popularity">Popularity Ascending</option>
-						<option value="rating">Rating Descending</option>
-						<option value="rating">Rating Ascending</option>
-						<option value="date">Release date Descending</option>
-						<option value="date">Release date Ascending</option>
+						
 					</select>
 					<a href="movielist_light.html" class="list"><i class="ion-ios-list-outline active"></i></a>
 					<a  href="moviegrid_light.html" class="grid"><i class="ion-grid"></i></a>
@@ -300,11 +276,6 @@
 		
 				
 				<div class="topbar-filter">
-					<label>Movies per page:</label>
-					<select>
-						<option value="range">5 Movies</option>
-						<option value="saab">10 Movies</option>
-					</select>
 					<div class="pagination2">
 						<span>Page 1 of 2:</span>
 						<a class="active" href="#">1</a>
@@ -319,29 +290,17 @@
 						<h4 class="sb-title">Search for movie</h4>
 						<form class="form-style-1" action="#">
 							<div class="row">
-								<div class="col-md-12 form-it">
+								<div class="col-md-12 form-it" id="IdSearch">
 									<label>Search keyword </label>
 									<input type="text" placeholder="Enter keywords">
 								</div>							
 								<div class="col-md-12 form-it">
 									<label>Release Year</label>
 									<div class="row">
-										<div class="col-md-6">
-											<select>
-												<option value="range">From</option>
-												<option value="number">2010</option>
-												<option value="number">2019</option>
-												<option value="number">2020</option>
-											</select>
-										</div>
-										<div class="col-md-6">
-											<select>
-												<option value="range">To</option>
-												<option value="number">2010</option>
-												<option value="number">2019</option>
-												<option value="number">2020</option>
-											</select>
-										</div>
+										<div class="col-md-12 form-it" id="Year">
+											
+											<input type="text" placeholder="Enter year">
+										</div>	
 									</div>
 								</div>
 								<div class="col-md-12 ">
@@ -359,7 +318,8 @@
 
 <script>
 	$(document).ready(function(){
-        
+		var keyword=$('#Enter keywords').val();
+			var Year=$('#Enter year').val();
 
             $.ajax({
                 method: "GET",
@@ -381,17 +341,34 @@
   			$('#cloneMe'+[i]+' ').find('h6').text(data.results[i].title);
 			$('#cloneMe'+[i]+' ').find('p').text(data.results[i].overview);
 			//$('#cloneMe'+[i+1]+' ').find("img").attr("src",data.results[i+1].poster_path);;
+		}		
+			
 		}
+
+		
+		function doApiRequest(keyword, Year){
+
+					$.ajax({
+							method: "GET",
+							url: "https://api.themoviedb.org/3/search/movie?api_key=5305fb06ed85e3fa8b875a21a3c7505f&language=en-US&query=" + keyword + 
+							"&include_adult=false&year=" + Year,
+							dataType: "json"
+							}).done(function(data){
+
+								postComment(data)
+
+					}).fail(function(){
+					console.log("failed");
+										});
+
+		}
+		$('.submit').click(function(){
+
 			
-			//$('#cloneMe').find('h6').text(data.results[0].title);
-			//$('#cloneMe').find('p').text(data.results[0].overview);
-			//$('#cloneMe').find("img").attr("src",data.results[0].poster_path);
-			
-        }
-
-
-       //doApiRequest("action","main");
-
+			doApiRequest(keyword, Year);         
+		});
+		
+      
     });
 </script>
 
